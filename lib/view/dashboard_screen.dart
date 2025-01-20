@@ -17,8 +17,7 @@ class DashboardScreen extends StatelessWidget {
           provider.currentTab,
         ),
         bottomNavigationBar: Container(
-          height: 85,
-          padding: const EdgeInsets.symmetric(vertical: 10.5, horizontal: 10),
+          height: 75,
           decoration: BoxDecoration(
             color: AppColors.colorWhite,
           ),
@@ -30,7 +29,7 @@ class DashboardScreen extends StatelessWidget {
                   behavior: HitTestBehavior.translucent,
                   onTap: () => provider.onTap(0),
                   child: SizedBox(
-                    height: 60,
+                    height: 55,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -38,13 +37,13 @@ class DashboardScreen extends StatelessWidget {
                         provider.currentTab == 0
                             ? SvgPicture.asset(
                                 'assets/icons/ic_bnb_home_active.svg',
-                                height: 32,
-                                width: 32,
+                                height: 27,
+                                width: 27,
                               )
                             : SvgPicture.asset(
                                 'assets/icons/ic_bnb_home_inactive.svg',
-                                height: 32,
-                                width: 32,
+                                height: 27,
+                                width: 27,
                               ),
                         const SizedBox(
                           height: 8,
@@ -52,7 +51,7 @@ class DashboardScreen extends StatelessWidget {
                         Text(
                           'Home',
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 10,
                             fontStyle: FontStyle.normal,
                             color: provider.currentTab == 0
                                 ? AppColors.themeColor
@@ -70,7 +69,7 @@ class DashboardScreen extends StatelessWidget {
                   behavior: HitTestBehavior.translucent,
                   onTap: () => provider.onTap(1),
                   child: SizedBox(
-                    height: 60,
+                    height: 55,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -78,13 +77,13 @@ class DashboardScreen extends StatelessWidget {
                         provider.currentTab == 1
                             ? SvgPicture.asset(
                                 'assets/icons/ic_bnb_my_cart_active.svg',
-                                height: 32,
-                                width: 32,
+                                height: 27,
+                                width: 27,
                               )
                             : SvgPicture.asset(
                                 'assets/icons/ic_bnb_my_cart_inactive.svg',
-                                height: 32,
-                                width: 32,
+                                height: 27,
+                                width: 27,
                               ),
                         const SizedBox(
                           height: 8,
@@ -92,7 +91,7 @@ class DashboardScreen extends StatelessWidget {
                         Text(
                           'My Cart',
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 10,
                             fontStyle: FontStyle.normal,
                             color: provider.currentTab == 1
                                 ? AppColors.themeColor

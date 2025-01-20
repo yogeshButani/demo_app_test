@@ -3,6 +3,8 @@ class ProductsModel {
   double rating;
   String productName;
   String discount;
+  String productStatus;
+  bool addedToCart;
   String productDescription;
   String image;
 
@@ -11,7 +13,9 @@ class ProductsModel {
     required this.rating,
     required this.productName,
     required this.discount,
+    required this.addedToCart,
     required this.productDescription,
+    required this.productStatus,
     required this.image,
   });
 }

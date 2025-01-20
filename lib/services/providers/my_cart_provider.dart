@@ -13,26 +13,7 @@ class MyCartProvider extends ChangeNotifier {
           'https://beautymone.com/wp-content/uploads/2023/08/DSC-1-11-scaled.jpg',
       totalPrice: 0,
     ),
-    MyCartModel(
-      productName: 'Peptide Complex',
-      category: 'Face care',
-      discount: '6',
-      price: 40,
-      quantity: 1,
-      image:
-          'https://assets.beautyhub.co.ke/wp-content/uploads/2022/11/13120656/cosrx_the_niacinamide_15_serum_20g_2-768x768.jpg',
-      totalPrice: 0,
-    ),
-    MyCartModel(
-      productName: 'Active Ceramide Solution',
-      category: 'Face care',
-      discount: '10',
-      price: 196,
-      quantity: 1,
-      image:
-          'https://skincapedia.com/wp-content/uploads/2024/03/52eb904e85fec28fc6b669c762ac95ff.jpg',
-      totalPrice: 0,
-    ),
+
   ];
 
   void increment(int index) {

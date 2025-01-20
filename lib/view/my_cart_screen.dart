@@ -103,7 +103,8 @@ class _MyCartScreenState extends State<MyCartScreen> {
                                       children: [
                                         Expanded(
                                           child: Text(
-                                            '\$${item.price.toString()}',
+                                            // '\$${item.price.toString()}',
+                                            '\$${item.price * item.quantity}',
                                             style: TextStyle(
                                               color: AppColors.textColor,
                                               fontSize: 13,

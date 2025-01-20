@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "354610469989",
+    "project_id": "sgutransactions-b88f6",
+    "storage_bucket": "sgutransactions-b88f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354610469989:android:d2b467696037f8fad8fa8c",
+        "android_client_info": {
+          "package_name": "com.test.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf00PwLWrGGM8n46FmsGnkm4y2mTciBdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354610469989:android:8bb2054271c4ab83d8fa8c",
+        "android_client_info": {
+          "package_name": "com.yb.sgutransactions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf00PwLWrGGM8n46FmsGnkm4y2mTciBdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

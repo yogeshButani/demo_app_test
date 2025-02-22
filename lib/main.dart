@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Demo App',
+      title: 'Siya Tech Machine Test',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -34,9 +34,7 @@ class MyApp extends StatelessWidget {
           child: widget!,
         );
       },
-      home: const DashboardScreen(
-        selectedIndex: 0,
-      ),
+      home: HackerNewsScreen(),
     );
   }
 }

@@ -37,34 +37,31 @@ class ApiMethods {
       };
     }
   }
-
-  Future<String> getMethod({
+  Future<dynamic> getMethod({
     required String method,
-    required Map<String, dynamic>? body,
+    Map<String, dynamic>? body,
     Map<String, String>? header,
   }) async {
     if (await AppUtils().isInternetConnected()) {
       try {
-        /// HTTP Code commit
         final response = await http.get(
           Uri.parse(method).replace(queryParameters: body),
           headers: header,
         );
-        debugPrint(
-            'url ---- ${Uri.parse(method).replace(queryParameters: body)} ----');
-        debugPrint('header ---- ${header.toString()} ----');
-        debugPrint('body ---- ${body.toString()} ----');
-        log('response ---- ${response.body.toString()} ----');
-        return response.body;
+
+        log('Response ---- ${response.body} ----');
+
+        return json.decode(response.body); // ✅ Decode JSON before returning
       } catch (e) {
-        log('___catch___get Method error---$method>>>>> ${e.toString()}<<<<<<');
-        return '';
+        log('Error in getMethod: $e');
+        return null;
       }
     } else {
       AppUtils().getToast('No Internet');
-      return '';
+      return null;
     }
   }
+
 
   Future<String> postMethod({
     required method,

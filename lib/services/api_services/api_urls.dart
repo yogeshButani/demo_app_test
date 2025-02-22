@@ -7,8 +7,6 @@ class ApiServices {
 
   ApiServices._internal();
 
-  static const baseUrl = 'https://dev.seeyafit.co.il/api/';
-
-  /// All Endpoints
-  static const otpSend = '${baseUrl}otp_send';
+  static const getNewsIds = 'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty';
+  static const getNewsDetails = 'https://hacker-news.firebaseio.com/v0/item/';
 }
